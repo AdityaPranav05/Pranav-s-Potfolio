@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pranav's Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Secretary ',
+						'Graphics Desginer',
+            'Gym lover',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+    </nav>
+    <header>
+      <div class="section__container header__container">
+        <p><span>Hello</span> I'm</p>
+        <h1>Pranav</h1>
+        <h2 class="section__title">final year <span>Undergrad.</span></h2>
+        <p>
+          Welcome to my  portfolio! I'm Pranav Aditya, a skilled and
+          creative student who is passionate about new technologies and cyber Security. I am currently a final year student of CSE(Cyber Security) department at Haldia Institute of technology, Haldia.
+        </p>
+        <div class="action__btns">
+          <button class="btn">Say Hello</button>
+          
+        </div>
+      </div>
+    </header>
+    <section class="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/about-bg.jpg" alt="about" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__title">About <span>Me</span></h2>
+         
+          <p class="about__details">
+            Highly motivated and accomplished cybersecurity undergraduate from the CSE-Cyber Security department,
+            proficient in multiple programming languages, including C, Java, Python and cybersecurity.
+             Eager to leverage a passion for security and technical expertise to contribute effectively to 
+             a dynamic team environment.
+          </p>
+          <button class="btn">More About</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="section__container service__container">
+        
+        <h2 class="section__title"><span>My</span> Learnings</h2>
+        <div class="service__grid">
+          <div class="service__card">
+            <i class="ri-computer-line"></i>
+            <h4>Cyber Security</h4>
+            <p>
+              Have basic knowledge in the field of cybersecurity like Cryptography, Stagenography, Computer Networks and hacking tools and many more.
+            </p>
+            <a href="#" class="read__more">Read more...</a>
+          </div>
+          <div class="service__card">
+            <i class="ri-code-s-slash-line"></i>
+            <h4>Web Development</h4>
+            <p>
+             Mainly learned front-end Development which have HTML, CSS, Javascript. This helped me to build user frirendly website and attractive websites.
+            </p>
+            <a href="#" class="read__more">Read more...</a>
+          </div>
+          <div class="service__card">
+            <i class="ri-edit-2-line"></i>
+            <h4>Graphics Design</h4>
+            <p>
+              Experenced in making attractive posters and designs for the clubs and societies which helped them
+              to grow and increase there engagement. Used well knowned applications like CANVA and PHOTOSHOP.
+            </p>
+            <a href="#" class="read__more">Read more...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="section__container project__container">
+        <p class="section__subtitle">Portfolio</p>
+        <h2 class="section__title"><span>Latest</span> Project</h2>
+        <div class="project__grid">
+          <div class="project__card">
+            <img src="assets/project-1.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project-2.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project-3.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project-4.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project-5.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project-6.png" alt="project" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__content">
+          <h2 class="section__title">Contact <span>Me!</span></h2>
+          <p class="section__subtitle">lets get connected..</p>
+          <div class="footer__details">
+            <p>
+              You can reach me through the contact form provided on this
+              website. Simply fill out the form with your name, email address,
+              and message, and I will get back to you as soon as possible.
+            </p>
+            
+            <p><i class="ri-phone-fill"></i>Phone number: +91 6206825782</p>
+            <p><i class="ri-mail-fill"></i>e-mail:  adityapranav050901@gmail.com</p>
+            
+          </div>
+          <div class="social__icons">
+            <a href="https://www.linkedin.com/in/pranav-aditya-a31129234/" class="icon"><i class="ri-linkedin-fill"></i></a>
+            <a href="https://www.facebook.com/PranavAdityaAD/" class="icon"><i class="ri-facebook-fill"></i></a>
+            <a href="https://github.com/AdityaPranav05" class="icon"><i class="ri-github-line"></i></a>
+            <a href="https://www.instagram.com/pranav_aditya_?igsh=aW90OXNmYm1keGZp" class="icon"><i class="ri-instagram-fill"></i></a>
+           
+          </div>
+        </div>
+        <form class="footer__form">
+          <input type="text" placeholder="Your Name" />
+          <input type="text" placeholder="Your Email Address" />
+          <input type="text" placeholder="Your Phone Number" />
+          <textarea cols="30" rows="10" placeholder="Message"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
